@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<app>
+	<escenas>
+	
+<!------------------------>
+<!--! MARTA RECEPCIÓN   -->
+<!------------------------>
+		
+		<marta_entrada_primeravisita_inicio loc="audio/marta_cast.mp3" opt="audio/marta_cast_opt.mp3">
+			<locucion iniciar="0" parar="1" />
+			<!--
+			<opcion iniciar_papa="0" parar_papa="2.8" iniciar_mama="0" parar_mama="2.8" />
+			-->
+			<papa iniciar="0" parar="2.8" />
+			<mama iniciar="0" parar="2.8" />
+			<locucion iniciar="1" parar="14" />
+		</marta_entrada_primeravisita_inicio>
+		
+		<marta_entrada_primeravisita_formulario loc="audio/marta_cast.mp3" opt="audio/marta_cast_opt.mp3">
+			<locucion iniciar="14" parar="23" />
+		</marta_entrada_primeravisita_formulario>
+		
+		<marta_entrada_primeravisita_pasoadoctor loc="audio/marta_cast.mp3" opt="audio/marta_cast_opt.mp3">
+			<!--
+			<locucion iniciar="23" parar="25" />
+			<papa iniciar="0" parar="2.8" />
+			<mama iniciar="0" parar="2.8" />
+			-->
+			<locucion iniciar="23" parar="27" />
+			<!--
+			<opcion iniciar_pablo="25.5" parar_pablo="29.3" iniciar_andrea="29.5" parar_andrea="33" iniciar_adrian="41.5" parar_adrian="45" />
+			-->
+			<pablo iniciar="25.5" parar="29.3" />
+			<andrea iniciar="29.5" parar="33" />
+			<adrian iniciar="41.5" parar="45" />
+		</marta_entrada_primeravisita_pasoadoctor>
+		
+		<marta_entrada_siguientesvisitas_inicio loc="audio/marta_cast.mp3" opt="audio/marta_cast_opt.mp3">
+			<locucion iniciar="32" parar="46" />
+		</marta_entrada_siguientesvisitas_inicio>
+		
+		<marta_entrada_siguientesvisitas_formulario loc="audio/marta_cast.mp3" opt="audio/marta_cast_opt.mp3">
+			<locucion iniciar="46" parar="50" />
+			<!--
+			<opcion iniciar_pablo="25.5" parar_pablo="29.3" iniciar_andrea="29.5" parar_andrea="33" iniciar_adrian="41.5" parar_adrian="45" />
+			-->
+			<pablo iniciar="25.5" parar="29.3" />
+			<andrea iniciar="29.5" parar="33" />
+			<adrian iniciar="41.5" parar="45" />
+			<locucion iniciar="50" parar="53.5" />
+		</marta_entrada_siguientesvisitas_formulario>
+
+<!------------------------>
+<!--! DOCTORA ANDREA   -->
+<!------------------------>
+
+		<andrea_entrada_primeravisita loc="audio/andrea_cast.mp3" opt="audio/andrea_cast_opt.mp3">
+			<locucion iniciar="0" parar="27" />
+		</andrea_entrada_primeravisita>
+
+		<andrea_entrada_siguientesvisitas loc="audio/andrea_cast.mp3" opt="audio/andrea_cast_opt.mp3">
+			<locucion iniciar="27.5" parar="36.2" />
+			<!--
+			<opcion iniciar_tos="32.9" parar_tos="34" iniciar_fiebre="34.5" parar_fiebre="35.5" iniciar_caida="35.8" parar_caida="37.7" iniciar_tripa="38" parar_tripa="39.5" />
+			-->
+			<tos iniciar="32.9" parar="34" />
+			<fiebre iniciar="34.5" parar="35.5" />
+			<caida iniciar="35.8" parar="37.7" />
+			<tripa iniciar="38" parar="39.5" />
+			<locucion iniciar="36.2" parar="38" />
+			<!--
+			<opcion iniciar_papa="39.8" parar_papa="41.8" iniciar_mama="41.8" parar_mama="44" />
+			-->
+			<papa iniciar="39.8" parar="41.8" />
+			<mama iniciar="41.8" parar="44" />
+		</andrea_entrada_siguientesvisitas>
+		
+		<andrea_otitis loc="audio/andrea_cast.mp3" opt="audio/andrea_cast_opt.mp3">
+			<locucion iniciar="38" parar="71.6" />
+		</andrea_otitis>
+		
+		<andrea_otitis_ok loc="audio/andrea_cast.mp3" opt="audio/andrea_cast_opt.mp3">
+			<locucion iniciar="72.1" parar="87.4" />
+		</andrea_otitis_ok>
+		
+		<andrea_tos loc="audio/andrea_cast.mp3" opt="audio/andrea_cast_opt.mp3">
+			<locucion iniciar="87.5" parar="142" />
+		</andrea_tos>
+
+		<andrea_tos_ok loc="audio/andrea_cast.mp3" opt="audio/andrea_cast_opt.mp3">
+			<!--
+			<opcion iniciar_papa="48.2" parar_papa="49.8" iniciar_mama="50" parar_mama="51.5" />
+			-->
+			<papa iniciar="48.2" parar="49.8" />
+			<mama iniciar="50" parar="51.5" />
+			<locucion iniciar="143" parar="174.5" />
+		</andrea_tos_ok>
+		
+		<andrea_se_ha_caido loc="audio/andrea_cast.mp3" opt="audio/andrea_cast_opt.mp3">
+			<locucion iniciar="175" parar="184" />
+			<!--
+			<opcion iniciar_papa="52.5" parar_papa="53.5" iniciar_mama="51.6" parar_mama="52.5" />
+			-->
+			<papa iniciar="52.5" parar="53.5" />
+			<mama iniciar="51.6" parar="52.5" />
+			<locucion iniciar="184" parar="197.5" />
+			<!--
+			<opcion iniciar_papa="45.6" parar_papa="46.5" iniciar_mama="44.5" parar_mama="45.3" />
+			-->
+			<papa iniciar="45.6" parar="46.5" />
+			<mama iniciar="44.5" parar="45.3" />
+			<locucion iniciar="197.5" parar="227.5" />
+		</andrea_se_ha_caido>
+		
+		<andrea_se_ha_caido_ok loc="audio/andrea_cast.mp3" opt="audio/andrea_cast_opt.mp3">
+			<locucion iniciar="227.5" parar="256" />
+		</andrea_se_ha_caido_ok>
+
+		<andrea_duele_tripa loc="audio/andrea_cast.mp3" opt="audio/andrea_cast_opt.mp3">
+			<locucion iniciar="256" parar="270" />
+			<!--
+			<opcion iniciar_papa="45.6" parar_papa="46.5" iniciar_mama="44.5" parar_mama="45.3" />
+			-->
+			<papa iniciar="45.6" parar="46.5" />
+			<mama iniciar="44.5" parar="45.3" />
+			<locucion iniciar="270" parar="278" />
+		</andrea_duele_tripa>
+		
+		<andrea_duele_tripa_ok loc="audio/andrea_cast.mp3" opt="audio/andrea_cast_opt.mp3">
+			<locucion iniciar="278" parar="304" />
+		</andrea_duele_tripa_ok>
+
+<!------------------------->
+<!--  DENTISTA ADRIÁN   --->
+<!------------------------->
+
+		<adrian_dentista_primeravisita loc="audio/adrian_cast.mp3" opt="audio/adrian_cast_opt.mp3">
+			<!--
+			<opcion iniciar_papa="0" parar_papa="0.5" iniciar_mama="0.6" parar_mama="1" />
+			-->
+			<papa iniciar="0" parar="0.5" />
+			<mama iniciar="0.6" parar="1" />
+			<locucion iniciar="0" parar="9" />
+		</adrian_dentista_primeravisita>
+		
+		<adrian_dentista_siguientesvisitas loc="audio/adrian_cast.mp3" opt="audio/adrian_cast_opt.mp3">
+			<locucion iniciar="9" parar="15.5" />
+		</adrian_dentista_siguientesvisitas>
+		
+		<adrian_dentista_continuacion loc="audio/adrian_cast.mp3" opt="audio/adrian_cast_opt.mp3">
+			<locucion iniciar="15.5" parar="47" />
+		</adrian_dentista_continuacion>
+		
+		<adrian_dentista_continuacion_ok loc="audio/adrian_cast.mp3" opt="audio/adrian_cast_opt.mp3">
+			<locucion iniciar="47" parar="63" />
+		</adrian_dentista_continuacion_ok>
+
+<!--------------------------->
+<!--  OFTALMÓLOGO PABLO    -->
+<!--------------------------->
+
+		<pablo_oftalmologo_primeravisita loc="audio/pablo_cast.mp3" opt="audio/pablo_cast_opt.mp3">
+			<locucion iniciar="0" parar="28" />
+		</pablo_oftalmologo_primeravisita>
+		
+		<pablo_oftalmologo_siguientesvisitas loc="audio/pablo_cast.mp3" opt="audio/pablo_cast_opt.mp3">
+			<locucion iniciar="28" parar="34" />
+		</pablo_oftalmologo_siguientesvisitas>
+		
+		<pablo_oftalmologo_continuacion loc="audio/pablo_cast.mp3" opt="audio/pablo_cast_opt.mp3">
+			<!--
+			<opcion iniciar_papa="38" parar_papa="40.6" iniciar_mama="34" parar_mama="37.5" />
+			-->
+			<papa iniciar="38" parar="40.6" />
+			<mama iniciar="34" parar="37.5" />
+			<locucion iniciar="34" parar="46" />
+			<!--
+			<opcion iniciar_papa="48" parar_papa="51.5" iniciar_mama="51.5" parar_mama="55" />
+			-->
+			<papa iniciar="48" parar="51.5" />
+			<mama iniciar="51.5" parar="55" />
+			<locucion iniciar="46" parar="64" />
+			<!--
+			<opcion iniciar_papa="57" parar_papa="58.5" iniciar_mama="55.5" parar_mama="56.7" />
+			-->
+			<papa iniciar="57" parar="58.5" />
+			<mama iniciar="55.5" parar="56.7" />
+			<locucion iniciar="64" parar="71" />
+		</pablo_oftalmologo_continuacion>
+		
+		<pablo_oftalmologo_continuacion_ok loc="audio/pablo_cast.mp3" opt="audio/pablo_cast_opt.mp3">
+			<locucion iniciar="77.5" parar="98" />
+		</pablo_oftalmologo_continuacion_ok>
+		
+		<pablo_oftalmologo_continuacion_ko loc="audio/pablo_cast.mp3" opt="audio/pablo_cast_opt.mp3">
+			<locucion iniciar="99" parar="116" />
+		</pablo_oftalmologo_continuacion_ko>
+
+<!---------------------->
+<!--! VACUNAS MARTA  -->
+<!---------------------->
+
+		<marta_vacunas_primera loc="audio/marta_cast.mp3" opt="audio/marta_cast_opt.mp3">
+			<locucion iniciar="55.5" parar="122.4" />
+		</marta_vacunas_primera>
+		
+		<marta_vacunas_primera_ok loc="audio/marta_cast.mp3" opt="audio/marta_cast_opt.mp3">
+			<locucion iniciar="122.4" parar="137.2" />
+		</marta_vacunas_primera_ok>
+
+		<marta_vacunas_segunda loc="audio/marta_cast.mp3" opt="audio/marta_cast_opt.mp3">
+			<locucion iniciar="137.5" parar="177.5" />
+		</marta_vacunas_segunda>
+		
+		<marta_vacunas_segunda_ok loc="audio/marta_cast.mp3" opt="audio/marta_cast_opt.mp3">
+			<locucion iniciar="177.5" parar="179.5" />
+			<!--
+			<opcion iniciar_papa="83.7" parar_papa="86.8" iniciar_mama="80.1" parar_mama="83.2" />
+			-->
+			<papa iniciar="83.7" parar="86.8" />
+			<mama iniciar="80.1" parar="83.2" />
+			<locucion iniciar="179.5" parar="202" />
+		</marta_vacunas_segunda_ok>
+		
+		<marta_vacunas_tercera loc="audio/marta_cast.mp3" opt="audio/marta_cast_opt.mp3">
+			<locucion iniciar="202" parar="204" />
+			<!--
+			<opcion iniciar_papa="89.5" parar_papa="92" iniciar_mama="87" parar_mama="89.5" />
+			-->
+			<papa iniciar="89.5" parar="92" />
+			<mama iniciar="87" parar="89.5" />
+			<locucion iniciar="204" parar="239" />
+		</marta_vacunas_tercera>
+		
+		<marta_vacunas_tercera_ok loc="audio/marta_cast.mp3" opt="audio/marta_cast_opt.mp3">
+			<locucion iniciar="239" parar="241" />
+			<!--
+			<opcion iniciar_papa="83.7" parar_papa="86.8" iniciar_mama="80.1" parar_mama="83.2" />
+			-->
+			<papa iniciar="83.7" parar="86.8" />
+			<mama iniciar="80.1" parar="83.2" />
+			<locucion iniciar="241" parar="247.3" />
+			<!--
+			<opcion iniciar_papa="111.4" parar_papa="113.5" iniciar_mama="109" parar_mama="111.4" />
+			-->
+			<papa iniciar="111.4" parar="113.5" />
+			<mama iniciar="109" parar="111.4" />
+			<locucion iniciar="247.3" parar="261" />
+		</marta_vacunas_tercera_ok>
+
+	</escenas>
+	<audios>
+
+<!----------------------------------------------------->
+<!--! OPCIONES MARTA RECEPCIÓN CASTELLANO  ------------>
+<!----------------------------------------------------->
+		<marta ruta="audio/marta_cast.mp3" />
+		<marta_opts ruta="audio/marta_cast_opt.mp3" />
+<!----------------------------------->
+<!--! OPCIONES ANDREA CASTELLANO  -->
+<!----------------------------------->
+		<andrea ruta="audio/andrea_cast.mp3" />
+		<andrea_opts ruta="audio/andrea_cast_opt.mp3" />
+<!------------------------------------------->
+<!--! OPCIONES ADRIÁN/DENTISTA CASTELLANO  -->
+<!------------------------------------------->
+		<dentista ruta="audio/adrian_cast.mp3" />
+		<dentista_opts ruta="audio/adrian_cast_opt.mp3" />
+<!--------------------------------------------->
+<!--! OPCIONES PABLO/OFTALMÓLOGO CASTELLANO  -->
+<!--------------------------------------------->
+		<oculista ruta="audio/pablo_cast.mp3" />
+		<oculista_opts ruta="audio/pablo_cast_opt.mp3" />
+<!----------------------------------------------------->
+<!--! OPCIONES MARTA VACUNAS CASTELLANO  -------------->
+<!----------------------------------------------------->
+		<vacunas ruta="audio/marta_cast.mp3" />
+		<vacunas_opts ruta="audio/marta_cast_opt.mp3" />
+	</audios>
+	<fondos>
+		<completo ruta="audio/fondo1.mp3" />
+		<ligero ruta="audio/fondo2.mp3" />
+	</fondos>
+</app>
