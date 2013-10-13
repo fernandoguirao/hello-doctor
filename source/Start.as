@@ -123,7 +123,7 @@
 			//stop the timeline, will play when fully loaded
 			stop();
 
-			application = "hellodoctor25";
+			application = "hellodoctor_";
 			
 			mySo = SharedObject.getLocal(application);
 			//trace("tutor ShOb", mySo.data.tutor);
@@ -324,9 +324,15 @@
 			delete mySo.data.peso;
 			delete mySo.data.tutor;
 			*/
-			mySo.data.gameuser = "BabyLove";
-			edad = mySo.data.edad;
-			tutor = mySo.data.tutor;
+			//application = "hellodoctor_" + String(Math.random());
+			nuevo = true;
+			mySo.data.gameuser = "BabyLove_" + String(Math.random());
+			mySo.data.edad = undefined;
+			mySo.data.peso = undefined;
+			mySo.data.talla = undefined;
+			mySo.data.tutor = undefined;
+			edad = null;
+			tutor = null;
 			mySo.data.marta = true;
 			mySo.data.andrea = true;
 			mySo.data.dentista = true;

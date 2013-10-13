@@ -196,6 +196,12 @@
 					_pausaTodo = false;
 					_menuApp.settingsModal.visible = false;
 					//init_newScreen( {screenRequest:Constants.REQUEST_INICIO} );
+					_sintoma = 0;
+					_nuevo = true;
+					_nuevoMarta = true;
+					_nuevoAndrea = true;
+					_nuevoDentista = true;
+					_nuevoOculista = true;
 					_main.clearValue();
 					_menuApp.visible = false;
 					change_screen( {screenRequest:Constants.REQUEST_INICIO, _isFirstTime:_nuevo} );
@@ -211,6 +217,7 @@
 					//init_newScreen( {screenRequest:Constants.REQUEST_INICIO} );
 					if (_main.estaTodo())
 					{
+						_sintoma = 0;
 						_main.clearValue();
 					}
 					_menuApp.visible = false;

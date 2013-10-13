@@ -140,11 +140,11 @@
 			
 			vistacamara.visible = false;
 			maskcamara.visible = false;
-			botonpasar.visible = false;
+			//bocadillo.botonpasar.visible = false;
 			_stopped = false;
 			addEventListener(Event.ADDED_TO_STAGE, onAddedToStage);
 			//addEventListener(MouseEvent.CLICK, onMouse);
-			botonpasar.addEventListener(MouseEvent.CLICK, eliminarQR);
+			//bocadillo.botonpasar.addEventListener(MouseEvent.CLICK, eliminarQR);
 		}
 
 		private function eliminarQR( e:MouseEvent ):void
@@ -152,26 +152,27 @@
 			ayudaQR.visible = false;
 			_conseguido = true;
 			
-			trace("conseguido fin");
+			trace("conseguido QR chungo");
 			
-			montaCharlas(_xmlok);
+			montaCharlas(_xmlok,null);
 			vistacamara.removeChild( videoHolder );
 			vistacamara.removeChild( red );
 			vistacamara.removeChild( blue );
 			
 			removeChild( cameraView );
 			
-			botonpasar.visible = false;
+			//bocadillo.botonpasar.visible = false;
 			
 			getQRimage.removeEventListener(QRreaderEvent.QR_IMAGE_READ_COMPLETE, onQrImageReadComplete);
 			qrDecode.removeEventListener(QRdecoderEvent.QR_DECODE_COMPLETE, onQrDecodeComplete);
 			removeEventListener(MouseEvent.CLICK, eliminarQR);
-			botonpasar.removeEventListener(MouseEvent.CLICK, eliminarQR);
+			bocadillo.removeEventListener(MouseEvent.CLICK, eliminarQR);
 		}
 
 
 		public function init( screenData:Object ):void
 		{
+			bocadillo.botonpasar.visible = false;
 			ayudaQR.visible = false;
 			bocadillo.visible = false;
 			llamada.visible = false;
@@ -751,7 +752,9 @@
 				*/
 			}
 			bocadillo.gotoAndStop(2);
+			
 			bocadillo.removeEventListener(MouseEvent.CLICK, onMouse);
+			
 		}
 		
 		private function ReadQrCodeInit():void
@@ -813,6 +816,10 @@
 			qrDecode.addEventListener(QRdecoderEvent.QR_DECODE_COMPLETE, onQrDecodeComplete);
 			redTimer.addEventListener(TimerEvent.TIMER_COMPLETE, onRedTimer );
 			addEventListener(Event.ENTER_FRAME, onEnterFrame);
+			
+			bocadillo.botonpasar.visible = true;
+			bocadillo.botonpasar.mouseChildren = false;
+			bocadillo.addEventListener(MouseEvent.CLICK, eliminarQR);
 		}
 
 		private function buildCameraView():Sprite

@@ -138,33 +138,33 @@
 			
 			vistacamara.visible = false;
 			maskcamara.visible = false;
-			botonpasar.visible = false;
+			//botonpasar.visible = false;
 			_stopped = false;
 			addEventListener(Event.ADDED_TO_STAGE, onAddedToStage);
 			//addEventListener(MouseEvent.CLICK, onMouse);
-			botonpasar.addEventListener(MouseEvent.CLICK, eliminarQR);
+			//botonpasar.addEventListener(MouseEvent.CLICK, eliminarQR);
 		}
 
 		private function eliminarQR( e:MouseEvent ):void
 		{
-			ayudaQR.visible = false;
+			//ayudaQR.visible = false;
 			_conseguido = true;
 			
 			trace("conseguido fin");
 			
-			montaCharlas(_xmlok);
+			montaCharlas(_xmlok,null);
 			vistacamara.removeChild( videoHolder );
 			vistacamara.removeChild( red );
 			vistacamara.removeChild( blue );
 			
 			removeChild( cameraView );
 			
-			botonpasar.visible = false;
+			//botonpasar.visible = false;
 			
 			getQRimage.removeEventListener(QRreaderEvent.QR_IMAGE_READ_COMPLETE, onQrImageReadComplete);
 			qrDecode.removeEventListener(QRdecoderEvent.QR_DECODE_COMPLETE, onQrDecodeComplete);
 			removeEventListener(MouseEvent.CLICK, eliminarQR);
-			botonpasar.removeEventListener(MouseEvent.CLICK, eliminarQR);
+			//botonpasar.removeEventListener(MouseEvent.CLICK, eliminarQR);
 		}
 
 		public function init( screenData:Object ):void

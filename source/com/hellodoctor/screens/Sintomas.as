@@ -73,6 +73,14 @@
 					btn.mc.visible = false;
 				}
 			}
+			
+			btn3.mc.alpha = 0;
+			//btn.hecho.visible = false;
+			//btn.buttonMode = true;
+			btn3.mouseChildren = false;
+			btn3.addEventListener(MouseEvent.CLICK, onMouse);
+			btn3.addEventListener(MouseEvent.MOUSE_OVER, onMouse);
+			btn3.addEventListener(MouseEvent.MOUSE_OUT, onMouse);
 
 			TweenMax.to(this, 1, {alpha: 1});
 		}

@@ -146,7 +146,7 @@
 			_stopped = false;
 			vistacamara.visible = false;
 			maskcamara.visible = false;
-			botonpasar.visible = false;
+			//botonpasar.visible = false;
 			
 			meses = new Array("ENE", "FEB", "MAR", "ABR", "MAY", "JUN", "JUL", "AGO", "SEP", "OCT", "NOV", "DIC");
 			
@@ -155,7 +155,7 @@
 			
 			// FUNCIÓN FERNANDO PARA ELIMINAR QR CON BOTÓN
 			
-			botonpasar.addEventListener(MouseEvent.CLICK, eliminarQR);
+			//botonpasar.addEventListener(MouseEvent.CLICK, eliminarQR);
 			
 			//FIN FUNCIÓN FERNANDO
 		}
@@ -167,7 +167,7 @@
 			ayudaQR.visible = false;
 			_conseguido = true;
 			
-			trace("conseguido fin");
+			trace("conseguido QR chungo");
 			
 			montaCharlas(_xmlok);
 			vistacamara.removeChild( videoHolder );
@@ -176,18 +176,19 @@
 			
 			removeChild( cameraView );
 			
-			botonpasar.visible = false;
+			//bocadillo.botonpasar.visible = false;
 			
 			getQRimage.removeEventListener(QRreaderEvent.QR_IMAGE_READ_COMPLETE, onQrImageReadComplete);
 			qrDecode.removeEventListener(QRdecoderEvent.QR_DECODE_COMPLETE, onQrDecodeComplete);
 			removeEventListener(MouseEvent.CLICK, eliminarQR);
-			botonpasar.removeEventListener(MouseEvent.CLICK, eliminarQR);
+			bocadillo.removeEventListener(MouseEvent.CLICK, eliminarQR);
 		}
 		
 		// FIN FUNCIÓN FERNANDO 2
 		
 		public function init( screenData:Object ):void
 		{
+			bocadillo.botonpasar.visible = false;
 			bgvac.visible = false;
 			ayudaQR.visible = false;
 			bocadillo.visible = false;
@@ -644,7 +645,7 @@
 						//btnCura.visible = false;
 						vistacamara.visible = true;
 						maskcamara.visible = true;
-						botonpasar.visible = true;
+						//botonpasar.visible = true;
 					}
 					else
 					{
@@ -674,6 +675,7 @@
 				
 			}
 			bocadillo.gotoAndStop(2);
+			//bocadillo.removeEventListener(MouseEvent.CLICK, eliminarQR);
 			bocadillo.removeEventListener(MouseEvent.CLICK, onMouse);
 		}
 		
@@ -737,6 +739,10 @@
 			qrDecode.addEventListener(QRdecoderEvent.QR_DECODE_COMPLETE, onQrDecodeComplete);
 			redTimer.addEventListener(TimerEvent.TIMER_COMPLETE, onRedTimer );
 			addEventListener(Event.ENTER_FRAME, onEnterFrame);
+			
+			bocadillo.botonpasar.visible = true;
+			bocadillo.botonpasar.mouseChildren = false;
+			bocadillo.addEventListener(MouseEvent.CLICK, eliminarQR);
 		}
 
 		private function buildCameraView():Sprite
