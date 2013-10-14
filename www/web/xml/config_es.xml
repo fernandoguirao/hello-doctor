@@ -71,6 +71,7 @@
 		
 		<andrea_otitis_ok loc="audio/andrea_cast.mp3" opt="audio/andrea_cast_opt.mp3">
 			<locucion iniciar="72.1" parar="88" />
+			<locucion iniciar="171.3" parar="173" />
 		</andrea_otitis_ok>
 		
 		<andrea_tos loc="audio/andrea_cast.mp3" opt="audio/andrea_cast_opt.mp3">
@@ -85,7 +86,8 @@
 			<locucion iniciar="146" parar="156" />
 			<!-- PAUSA / CONFIRMAR QUE LE COGEMOS DE LA MANO + RISA FX -->
 			<pausa />
-			<locucion iniciar="156" parar="175" />
+			<locucion iniciar="156" parar="164.8" />
+			<locucion iniciar="166.4" parar="175" />
 		</andrea_tos_ok>
 		
 		<andrea_se_ha_caido loc="audio/andrea_cast.mp3" opt="audio/andrea_cast_opt.mp3">
@@ -162,9 +164,9 @@
 			<pausa />
 			<locucion iniciar="48.9" parar="64" />
 			<!-- Aquí empieza lo de 'si quieres te lo explico otra vez' que podemos eliminar -->
-			<papa iniciar="57" parar="58.5" />
+			<!-- <papa iniciar="57" parar="58.5" />
 			<mama iniciar="55.3" parar="56.7" />
-			<locucion iniciar="65.5" parar="68" />
+			<locucion iniciar="65.5" parar="68" /> -->
 			<!-- Aquí termina lo de 'te lo explico otra vez' que podríamos eliminar -->
 			<locucion iniciar="68" parar="71.3" />
 		</pablo_oftalmologo_continuacion>
