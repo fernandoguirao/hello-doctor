@@ -61,8 +61,10 @@
 			<papa iniciar="83" parar="88.5" />
 			<mama iniciar="88.5" parar="94.4" />
 			<!-- PAUSA / CONFIRMAR SI TIENE FIEBRE EL BEBÉ-->
+			<pausa />
 			<locucion iniciar="31.7" parar="37.6" />
 			<!-- MODAL / VEMOS MODAL CON EL OTOSCOPIO PERO AÚN NO EL BOTÓN DE EMPEZAR QR -->
+			<pausa />
 			<locucion iniciar="37.6" parar="51.4" />
 		</andrea_otitis>
 		
@@ -79,12 +81,14 @@
 		<andrea_tos_ok loc="audio/andrea_ing.mp3" opt="audio/andrea_ing_opt.mp3">
 			<locucion iniciar="111.7" parar="122.2" />
 			<!-- PAUSA / CONFIRMAR QUE LE COGEMOS DE LA MANO + RISA FX -->
+			<pausa />
 			<locucion iniciar="122.2" parar="140.6" />
 		</andrea_tos_ok>
 		
 		<andrea_se_ha_caido loc="audio/andrea_ing.mp3" opt="audio/andrea_ing_opt.mp3">
 			<locucion iniciar="141" parar="163.5" />
 			<!-- PAUSA / CONFIRMAR QUE LE HEMOS QUITADO LA ROPA -->
+			<pausa />
 			<locucion iniciar="163.5" parar="178.7" />
 			<mama iniciar="129.4" parar="133" />
 			<papa iniciar="133.3" parar="137" />
@@ -126,7 +130,7 @@
 			<locucion iniciar="59" parar="92" />
 		</adrian_dentista_continuacion_ok>
 
-<!--  OFTALMÓLOGO PABLO    -->
+<!-- OFTALMÓLOGO PABLO -->
 
 		<pablo_oftalmologo_primeravisita loc="audio/pablo_ing.mp3" opt="audio/pablo_ing_opt.mp3">
 			<locucion iniciar="0" parar="26" />
@@ -143,13 +147,15 @@
 			<mama iniciar="37.7" parar="40.7" />
 			<locucion iniciar="43.5" parar="49.5" />
 			<!-- PAUSA / PONER GAFAS -->
+			<pausa />
 			<locucion iniciar="49.5" parar="58" />
 			<!-- MODAL / EMPIEZA A MOSTRAR LOS SÍMBOLOS DEL JUEGO -->
+			<pausa />
 			<locucion iniciar="58" parar="77.2" />
 			<!-- Aquí empieza lo de 'si quieres te lo explico otra vez' que podemos eliminar -->
-			<papa iniciar="57.6" parar="59" />
+			<!-- <papa iniciar="57.6" parar="59" />
 			<mama iniciar="56.3" parar="57.6" />
-			<locucion iniciar="78" parar="80.2" />
+			<locucion iniciar="78" parar="80.2" /> -->
 			<!-- Aquí termina lo de 'te lo explico otra vez' que podríamos eliminar -->
 			<locucion iniciar="80.2" parar="85" />
 		</pablo_oftalmologo_continuacion>
@@ -167,8 +173,10 @@
 		<marta_vacunas_primera loc="audio/marta_ing.mp3" opt="audio/marta_ing_opt.mp3">
 			<locucion iniciar="73.5" parar="87" />
 			<!-- Llaman por teléfono -->
+			<pausa />
 			<locucion iniciar="87" parar="101.5" />
 			<!-- Termina llamada -->
+			<pausa />
 			<locucion iniciar="101.5" parar="135.5" />
 		</marta_vacunas_primera>
 		
