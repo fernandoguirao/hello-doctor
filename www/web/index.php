@@ -11,7 +11,7 @@ else
     {?>
 
             <form method="POST" action="secure.php">
-            Pass <input type="password" name="pass"></input><br/>
+            <input type="password" name="pass"></input><br/>
             <input type="submit" name="submit" value="Go"></input>
             </form>
     <?}
