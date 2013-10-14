@@ -102,9 +102,10 @@
 			<locucion iniciar="185" parar="198.4" />
 			<papa iniciar="45.4" parar="46.1" />
 			<mama iniciar="44.6" parar="45.2" />
+			<locucion iniciar="198.4" parar="204.5" />
 			<!-- PAUSA / CONFIRMAR QUE LE HEMOS QUITADO LA ROPA -->
-			<pausa />
-			<locucion iniciar="198.4" parar="218" />
+			<pausa /> 
+			<locucion iniciar="204.5" parar="218" />
 			<pausa />
 			<locucion iniciar="218" parar="227.5" />
 		</andrea_se_ha_caido>
