@@ -98,6 +98,9 @@
 		private var retoma:Number;
 		private var countParadas:int;
 		
+		private var retomaPose:int;
+		public var pose:MovieClip;
+		
 		private var charlas:Array;
 		private var countCharlas:int;
 		private var stopSound:Number;
@@ -116,6 +119,7 @@
 		public var globalUrl:String;
 
 		public var boca:MovieClip;
+		public var ojos:MovieClip;
 		public var countsecs:int = 0;
 		
 		public var bocadillo:MovieClip;
@@ -149,12 +153,39 @@
 
 		private function eliminarQR( e:MouseEvent ):void
 		{
+			redTimer.stop();
+			freezeImage.bitmapData.draw(video);
+			freezeImage.visible = true;
+			//removeEventListener(Event.ENTER_FRAME, onEnterFrame);
+			//resultView.visible = true;
+			// TESTS MÍOS
+			//cameraView.visible = false;
+
+			cheatTimer.stop();
+			//_cheat = true;
+			cheatTimer.removeEventListener(TimerEvent.TIMER, getCheat);
+
+			removeEventListener(Event.ENTER_FRAME, onEnterFrame);
+
+			vistacamara.visible = false;
+			maskcamara.visible = false;
+			
 			ayudaQR.visible = false;
 			_conseguido = true;
 			
 			trace("conseguido QR chungo");
-			
-			montaCharlas(_xmlok,null);
+			if (tipoModal == 101)
+			{
+				bocadillo.visible = false;
+				_controller._pausaTodo = false;
+				esperaModal = false;
+				reproduce();
+				tipoModal = 90;
+			}
+			else
+			{
+				montaCharlas(_xmlok,null);
+			}
 			vistacamara.removeChild( videoHolder );
 			vistacamara.removeChild( red );
 			vistacamara.removeChild( blue );
@@ -220,7 +251,9 @@
 				montaCharlas(_xmlok,null);
 				_controller._juego = false;
 				_conseguido = true;
-				
+				pose.gotoAndStop(2);
+				boca.visible = false;
+				ojos.visible = false;
 			}
 			else
 			{
@@ -331,6 +364,8 @@
 			charlas = new Array();
 			if (xmlpre != null)
 			{
+				
+				
 				for (i = 0; i < xmlpre.children().length(); i++)
 				{
 					if (xmlpre.children()[i].name() == "locucion")
@@ -360,6 +395,7 @@
 				}
 			}
 			trace("4");
+			retomaPose = Number(xml.children()[0].@iniciar) * 1000 + 2500;
 			for (i = 0; i < xml.children().length(); i++)
 			{
 				if (xml.children()[i].name() == "locucion")
@@ -427,12 +463,27 @@
 			{
 				if (tipoModal == 0)
 				{
-					trace("espera");
+					trace("espera: ", _sintoma);
 					
 					//tipoModal = true;
 					//removeEventListener(Event.ENTER_FRAME, controllerSound);
 					//boca.gotoAndStop(boca.totalFrames);
-					llamada.gotoAndStop(1);
+					if (_sintoma == 1)
+					{
+						llamada.gotoAndStop(1);
+					}
+					if (_sintoma == 6)
+					{
+						llamada.gotoAndStop(4);
+					}
+					if (_sintoma == 7)
+					{
+						llamada.gotoAndStop(3);
+					}
+					if (_sintoma == 99)
+					{
+						llamada.gotoAndStop(1);
+					}
 					llamada.visible = true;
 					esperaModal = true;
 					//snd = _opt;
@@ -465,7 +516,53 @@
 					//tipoModal = true;
 					//removeEventListener(Event.ENTER_FRAME, controllerSound);
 					//boca.gotoAndStop(boca.totalFrames);
-					llamada.gotoAndStop(2);
+					if (_sintoma == 1)
+					{
+						llamada.gotoAndStop(1);
+					}
+					if (_sintoma == 6)
+					{
+						llamada.gotoAndStop(4);
+					}
+					if (_sintoma == 7)
+					{
+						llamada.gotoAndStop(3);
+					}
+					if (_sintoma == 99)
+					{
+						llamada.gotoAndStop(1);
+					}
+					llamada.visible = true;
+					esperaModal = true;
+					//snd = _opt;
+					_controller._pausaTodo = true;
+					countCharlas++;
+					// funcion muestra modal
+					llamada.addEventListener(MouseEvent.CLICK, onModal);
+				}
+				if (tipoModal == 11)
+				{
+					trace("espera");
+					
+					//tipoModal = true;
+					//removeEventListener(Event.ENTER_FRAME, controllerSound);
+					//boca.gotoAndStop(boca.totalFrames);
+					if (_sintoma == 1)
+					{
+						llamada.gotoAndStop(1);
+					}
+					if (_sintoma == 6)
+					{
+						llamada.gotoAndStop(4);
+					}
+					if (_sintoma == 7)
+					{
+						llamada.gotoAndStop(3);
+					}
+					if (_sintoma == 99)
+					{
+						llamada.gotoAndStop(1);
+					}
 					llamada.visible = true;
 					esperaModal = true;
 					//snd = _opt;
@@ -569,6 +666,13 @@
 							//boca.nextFrame();
 						}
 					}
+				}
+				
+				if (channel.position > retomaPose)
+				{
+					pose.gotoAndStop(1);
+					boca.visible = true;
+					ojos.visible = true;
 				}
 				
 				// end audio

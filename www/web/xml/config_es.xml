@@ -79,6 +79,7 @@
 			<locucion iniciar="88.3 " parar="99" />
 			<locucion iniciar="100" parar="114" />
 			<!-- PAUSA / CONFIRMAR QUE LE HEMOS VISTO LA GARGANTA -->
+			<pausa />
 			<locucion iniciar="114" parar="142.3" />
 		</andrea_tos>
 
@@ -98,10 +99,11 @@
 			<locucion iniciar="175" parar="184" />
 			<mama iniciar="52.5" parar="53.5" />
 			<papa iniciar="51.6" parar="52.6" />
-			<!-- PAUSA / CONFIRMAR QUE LE HEMOS QUITADO LA ROPA -->
 			<locucion iniciar="185" parar="198.4" />
 			<papa iniciar="45.4" parar="46.1" />
 			<mama iniciar="44.6" parar="45.2" />
+			<!-- PAUSA / CONFIRMAR QUE LE HEMOS QUITADO LA ROPA -->
+			<pausa />
 			<locucion iniciar="198.4" parar="218" />
 			<pausa />
 			<locucion iniciar="218" parar="227.5" />

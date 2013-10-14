@@ -98,6 +98,9 @@
 		private var retoma:Number;
 		private var countParadas:int;
 		
+		private var retomaPose:int;
+		public var pose:MovieClip;
+		
 		private var charlas:Array;
 		private var countCharlas:int;
 		private var stopSound:Number;
@@ -114,6 +117,7 @@
 		public var globalUrl:String;
 
 		public var boca:MovieClip;
+		public var ojos:MovieClip;
 		public var countsecs:int = 0;
 		
 		private var _stopped:Boolean;
@@ -202,6 +206,9 @@
 				montaCharlas(_xmlok,null);
 				_controller._juego = false;
 				_conseguido = true;
+				pose.gotoAndStop(2);
+				boca.visible = false;
+				ojos.visible = false;
 			}
 			else
 			{
@@ -292,6 +299,8 @@
 			charlas = new Array();
 			if (xmlpre != null)
 			{
+				
+				
 				for (i = 0; i < xmlpre.children().length(); i++)
 				{
 					if (xmlpre.children()[i].name() == "locucion")
@@ -316,6 +325,7 @@
 					}
 				}
 			}
+			retomaPose = Number(xml.children()[0].@iniciar) * 1000 + 2500;
 			for (i = 0; i < xml.children().length(); i++)
 			{
 				if (xml.children()[i].name() == "locucion")
@@ -432,6 +442,13 @@
 							//boca.nextFrame();
 						}
 					}
+				}
+				
+				if (channel.position > retomaPose)
+				{
+					pose.gotoAndStop(1);
+					boca.visible = true;
+					ojos.visible = true;
 				}
 				
 				// end audio

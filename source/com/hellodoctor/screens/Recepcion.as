@@ -164,6 +164,23 @@
 		
 		private function eliminarQR( e:MouseEvent ):void
 		{
+			redTimer.stop();
+			freezeImage.bitmapData.draw(video);
+			freezeImage.visible = true;
+			//removeEventListener(Event.ENTER_FRAME, onEnterFrame);
+			//resultView.visible = true;
+			// TESTS MÍOS
+			//cameraView.visible = false;
+
+			cheatTimer.stop();
+			//_cheat = true;
+			cheatTimer.removeEventListener(TimerEvent.TIMER, getCheat);
+
+			removeEventListener(Event.ENTER_FRAME, onEnterFrame);
+
+			vistacamara.visible = false;
+			maskcamara.visible = false;
+			
 			ayudaQR.visible = false;
 			_conseguido = true;
 			
@@ -921,7 +938,7 @@
 				redTimer.stop();
 				freezeImage.bitmapData.draw(video);
 				freezeImage.visible = true;
-				removeEventListener(Event.ENTER_FRAME, onEnterFrame);
+				//removeEventListener(Event.ENTER_FRAME, onEnterFrame);
 				//resultView.visible = true;
 				// TESTS MÍOS
 				//cameraView.visible = false;

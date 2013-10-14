@@ -141,8 +141,12 @@
 			_menuApp.pausaModal.addEventListener(MouseEvent.CLICK, onMenuOpts);
 			
 			_menuApp.settingsModal.visible = false;
-			_menuApp.settingsModal.mouseChildren = false;
-			_menuApp.settingsModal.addEventListener(MouseEvent.CLICK, onMenuOpts);
+			
+			_menuApp.settingsModal.reiniBtn.mouseChildren = false;
+			_menuApp.settingsModal.reiniBtn.addEventListener(MouseEvent.CLICK, onMenuOpts);
+			
+			_menuApp.settingsModal.cerrarBtn.mouseChildren = false;
+			_menuApp.settingsModal.cerrarBtn.addEventListener(MouseEvent.CLICK, onMenuOpts);
 			
 			_menuApp.comoModal.visible = false;
 			_menuApp.comoModal.mouseChildren = false;
@@ -192,7 +196,7 @@
 					_menuApp.settingsModal.visible = true;
 					break;
 				
-				case (_menuApp.settingsModal) :
+				case (_menuApp.settingsModal.reiniBtn) :
 					_pausaTodo = false;
 					_menuApp.settingsModal.visible = false;
 					//init_newScreen( {screenRequest:Constants.REQUEST_INICIO} );
@@ -205,6 +209,21 @@
 					_main.clearValue();
 					_menuApp.visible = false;
 					change_screen( {screenRequest:Constants.REQUEST_INICIO, _isFirstTime:_nuevo} );
+					break;
+				
+				case (_menuApp.settingsModal.cerrarBtn) :
+					_pausaTodo = false;
+					_menuApp.settingsModal.visible = false;
+					//init_newScreen( {screenRequest:Constants.REQUEST_INICIO} );
+					//_sintoma = 0;
+					//_nuevo = true;
+					//_nuevoMarta = true;
+					//_nuevoAndrea = true;
+					//_nuevoDentista = true;
+					//_nuevoOculista = true;
+					//_main.clearValue();
+					//_menuApp.visible = false;
+					//change_screen( {screenRequest:Constants.REQUEST_INICIO, _isFirstTime:_nuevo} );
 					break;
 				
 				case (_menuApp.endModal) :
