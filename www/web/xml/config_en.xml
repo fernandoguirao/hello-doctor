@@ -65,6 +65,7 @@
 			<locucion iniciar="31.7" parar="37.6" />
 			<!-- MODAL / VEMOS MODAL CON EL OTOSCOPIO PERO AÚN NO EL BOTÓN DE EMPEZAR QR -->
 			<pausa />
+			<!-- ESCRIBE -->
 			<locucion iniciar="37.6" parar="51.4" />
 		</andrea_otitis>
 		
@@ -75,6 +76,7 @@
 		<andrea_tos loc="audio/andrea_ing.mp3" opt="audio/andrea_ing_opt.mp3">
 			<locucion iniciar="67 " parar="89" />
 			<!-- PAUSA / CONFIRMAR QUE LE HEMOS VISTO LA GARGANTA -->
+			<pausa />
 			<locucion iniciar="89 " parar="111.7" />
 		</andrea_tos>
 

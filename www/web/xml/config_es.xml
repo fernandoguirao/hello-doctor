@@ -70,6 +70,7 @@
 		</andrea_otitis>
 		
 		<andrea_otitis_ok loc="audio/andrea_cast.mp3" opt="audio/andrea_cast_opt.mp3">
+			<!-- ESCRIBE -->
 			<locucion iniciar="72.1" parar="88" />
 			<locucion iniciar="171.3" parar="173" />
 		</andrea_otitis_ok>
@@ -82,6 +83,7 @@
 		</andrea_tos>
 
 		<andrea_tos_ok loc="audio/andrea_cast.mp3" opt="audio/andrea_cast_opt.mp3">
+			<!-- ESCRIBE -->
 			<locucion iniciar="142.7" parar="144" />
 			<mama iniciar="48.2" parar="49.9" />
 			<papa iniciar="49.9" parar="51.6" />
@@ -106,6 +108,7 @@
 		</andrea_se_ha_caido>
 		
 		<andrea_se_ha_caido_ok loc="audio/andrea_cast.mp3" opt="audio/andrea_cast_opt.mp3">
+			<!-- ESCRIBE -->
 			<locucion iniciar="227.5" parar="256" />
 		</andrea_se_ha_caido_ok>
 
@@ -117,6 +120,7 @@
 		</andrea_duele_tripa>
 		
 		<andrea_duele_tripa_ok loc="audio/andrea_cast.mp3" opt="audio/andrea_cast_opt.mp3">
+			<!-- ESCRIBE -->
 			<locucion iniciar="278" parar="304" />
 		</andrea_duele_tripa_ok>
 
@@ -138,6 +142,7 @@
 		</adrian_dentista_continuacion>
 		<!-- ENTRE ESTAS DOS ETIQUETAS UN MODAL DE CONFIRMACIÓN DE QUE HEMOS HECHO EL MASAJE --> 
 		<adrian_dentista_continuacion_ok loc="audio/adrian_cast.mp3" opt="audio/adrian_cast_opt.mp3">
+			<!-- ESCRIBE -->
 			<locucion iniciar="47.4" parar="63" />
 		</adrian_dentista_continuacion_ok>
 
@@ -175,6 +180,7 @@
 		</pablo_oftalmologo_continuacion>
 		
 		<pablo_oftalmologo_continuacion_ok loc="audio/pablo_cast.mp3" opt="audio/pablo_cast_opt.mp3">
+			<!-- ESCRIBE -->
 			<locucion iniciar="77.5" parar="98" />
 		</pablo_oftalmologo_continuacion_ok>
 		
@@ -195,6 +201,7 @@
 		</marta_vacunas_primera>
 		
 		<marta_vacunas_primera_ok loc="audio/marta_cast.mp3" opt="audio/marta_cast_opt.mp3">
+			<!-- ESCRIBE -->
 			<locucion iniciar="122.4" parar="137.2" />
 		</marta_vacunas_primera_ok>
 
@@ -203,6 +210,7 @@
 		</marta_vacunas_segunda>
 		
 		<marta_vacunas_segunda_ok loc="audio/marta_cast.mp3" opt="audio/marta_cast_opt.mp3">
+			<!-- ESCRIBE -->
 			<locucion iniciar="177.5" parar="179.7" />
 			<papa iniciar="83.7" parar="86.8" />
 			<mama iniciar="80.1" parar="83.2" />
@@ -217,6 +225,7 @@
 		</marta_vacunas_tercera>
 		
 		<marta_vacunas_tercera_ok loc="audio/marta_cast.mp3" opt="audio/marta_cast_opt.mp3">
+			<!-- ESCRIBE -->
 			<locucion iniciar="239" parar="241" />
 			<papa iniciar="83.8" parar="86.7" />
 			<mama iniciar="80.3" parar="83.4" />
