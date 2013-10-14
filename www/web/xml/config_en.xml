@@ -140,7 +140,9 @@
 		</pablo_oftalmologo_primeravisita>
 		
 		<pablo_oftalmologo_siguientesvisitas loc="audio/pablo_ing.mp3" opt="audio/pablo_ing_opt.mp3">
-			<locucion iniciar="34.5" parar="42.3" />
+			<!-- <locucion iniciar="34.5" parar="42.3" /> -->
+			<locucion iniciar="0" parar="26" />
+			<locucion iniciar="27.8" parar="34" />
 		</pablo_oftalmologo_siguientesvisitas>
 		
 		<pablo_oftalmologo_continuacion loc="audio/pablo_ing.mp3" opt="audio/pablo_ing_opt.mp3">

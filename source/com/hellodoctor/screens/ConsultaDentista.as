@@ -207,7 +207,7 @@
 				_controller._juego = false;
 				_conseguido = true;
 				pose.gotoAndStop(2);
-				boca.visible = false;
+				boca.visible = true;
 				ojos.visible = false;
 			}
 			else
