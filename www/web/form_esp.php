@@ -14,6 +14,7 @@
 	<head>
 		<title>Hello, Doctor</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
 		<style>
 			.alineador {
 				position:relative;

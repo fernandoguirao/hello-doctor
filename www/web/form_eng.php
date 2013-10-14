@@ -13,6 +13,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
 	<head>
 		<title>Hello, Doctor</title>
+		<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<style>
 			.alineador {

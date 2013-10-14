@@ -235,8 +235,15 @@
 		<vacunas ruta="audio/marta_ing.mp3" />
 		<vacunas_opts ruta="audio/marta_ing_opt.mp3" />
 	</audios>
+	<efectos>
+		<puerta ruta="audio/puerta.mp3" />
+		<telefono ruta="audio/telefono.mp3" />
+		<exterior ruta="audio/exterior.mp3" />
+		<boton ruta="audio/boton.mp3" />
+	</efectos>
 	<fondos>
-		<completo ruta="audio/fondo1.mp3" />
-		<ligero ruta="audio/fondo2.mp3" />
+		<completo ruta="audio/tema_principal.mp3" />
+		<ligero ruta="audio/tema_minimal.mp3" />
+		<juego ruta="audio/tema_juegos.mp3" />
 	</fondos>
 </app>
