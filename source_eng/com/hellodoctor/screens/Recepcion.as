@@ -148,7 +148,7 @@
 			maskcamara.visible = false;
 			//botonpasar.visible = false;
 			
-			meses = new Array("ENE", "FEB", "MAR", "ABR", "MAY", "JUN", "JUL", "AGO", "SEP", "OCT", "NOV", "DIC");
+			meses = new Array("JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AGO", "SEP", "OCT", "NOV", "DEC");
 			
 			addEventListener(Event.ADDED_TO_STAGE, onAddedToStage);
 			//addEventListener(MouseEvent.CLICK, onMouse);
@@ -273,7 +273,7 @@
 			
 			montaCharlas(_xml);
 			
-			_controller._loadingClip.mc.txt.text = "EN LA ENFERMERÍA";
+			_controller._loadingClip.mc.txt.text = "IN THE NURSERY";
 			_controller._loadingClip.alpha = 0;
 			
 			if (_sintoma < 1)

@@ -396,7 +396,7 @@
 		{
 			//update text field with the current progress
 			progress_txt.text = "Loading: " + String (Math .floor((e.bytesLoaded/e.bytesTotal)*100)) + " %";
-			loaderMain.txt.text = "CARGANDO ESCENARIOS";
+			loaderMain.txt.text = "LOADING BACKGROUNDS";
 			loaderMain.barra.scaleX = e.bytesLoaded/e.bytesTotal;
 		}
 
@@ -476,7 +476,7 @@
 		private function cargaFondos():void
 		{
 			trace("cargar fondo:", fondos[countFondos][1]);
-			loaderMain.txt.text = "CARGANDO MÚSICA";
+			loaderMain.txt.text = "LOADING MUSIC";
 			snd = new Sound();
 
 			req = new URLRequest(globalUrl + fondos[countFondos][1]);
@@ -561,7 +561,7 @@
 		private function cargaEfectos():void
 		{
 			trace("cargar effects:", effect[countEffects][0], effect[countEffects][1]);
-			loaderMain.txt.text = "CARGANDO EFECTOS";
+			loaderMain.txt.text = "LOADING FX";
 			snd = new Sound();
 
 			req = new URLRequest(globalUrl + effect[countEffects][1]);
@@ -579,7 +579,7 @@
 		private function cargaAudios():void
 		{
 			////trace("cargar audio:", sounds[countSounds][1]);
-			loaderMain.txt.text = "CARGANDO DIÁLOGOS";
+			loaderMain.txt.text = "LOADING DIALOGS";
 			snd = new Sound();
 
 			req = new URLRequest(globalUrl + sounds[countSounds][1]);

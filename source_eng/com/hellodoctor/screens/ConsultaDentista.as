@@ -215,7 +215,7 @@
 				montaCharlas(_xml,_xmlpre);
 			}
 			
-			_controller._loadingClip.mc.txt.text = "EN EL DENTISTA";
+			_controller._loadingClip.mc.txt.text = "IN THE DENTIST";
 			_controller._loadingClip.alpha = 0;
 			
 			if (_controller._primeraDentista)

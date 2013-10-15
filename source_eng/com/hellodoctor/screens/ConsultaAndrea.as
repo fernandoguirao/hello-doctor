@@ -260,7 +260,7 @@
 				montaCharlas(_xml,_xmlpre);
 			}
 			
-			_controller._loadingClip.mc.txt.text = "EN EL PEDIATRA";
+			_controller._loadingClip.mc.txt.text = "IN THE PEDIATRICIAN";
 			_controller._loadingClip.alpha = 0;
 			
 			if (_controller._primeraAndrea)

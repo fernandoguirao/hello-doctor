@@ -241,7 +241,7 @@
 				}
 			}
 			
-			_controller._loadingClip.mc.txt.text = "EN EL OCULISTA";
+			_controller._loadingClip.mc.txt.text = "IN THE OCULIST";
 			_controller._loadingClip.alpha = 0;
 			
 			if (_controller._primeraOculista)

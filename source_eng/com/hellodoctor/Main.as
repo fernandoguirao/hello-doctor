@@ -659,22 +659,22 @@
 					switch ( _sintoma )
 					{
 						case 1 :
-							_tituloPuerta = "MEDICINA GENERAL";
+							_tituloPuerta = "GENERAL MEDICINE";
 							_nombrePuerta = "ANDREA";
 							break;
 
 						case 2 :
-							_tituloPuerta = "DENTISTA";
+							_tituloPuerta = "DENTIST";
 							_nombrePuerta = "ADRIÁN";
 							break;
 
 						case 3 :
-							_tituloPuerta = "MEDICINA GENERAL";
+							_tituloPuerta = "GENERAL MEDICINE";
 							_nombrePuerta = "ANDREA";
 							break;
 
 						case 4 :
-							_tituloPuerta = "OCULISTA";
+							_tituloPuerta = "OCULIST";
 							_nombrePuerta = "PABLO";
 							break;
 
@@ -684,12 +684,12 @@
 							break;
 
 						case 6 :
-							_tituloPuerta = "MEDICINA GENERAL";
+							_tituloPuerta = "GENERAL MEDICINE";
 							_nombrePuerta = "ANDREA";
 							break;
 
 						case 7 :
-							_tituloPuerta = "MEDICINA GENERAL";
+							_tituloPuerta = "GENERAL MEDICINE";
 							_nombrePuerta = "ANDREA";
 							break;
 
