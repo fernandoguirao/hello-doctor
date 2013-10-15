@@ -1,0 +1,105 @@
+			html {
+					height: 100%;
+			}
+			body {
+					background-color:#ffffff;
+					margin: 0 0 0 0;
+					padding: 0 0 0 0;
+					background-image:url('img/background.png');
+					background-repeat:repeat;
+					width:100%;
+					height:100%;
+			}
+#wrapper {
+border: 0px solid #CCCCCC;
+position: absolute;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+margin: auto;
+width: 993px!important;
+height: 717px!important;
+background-image: url('img/sombra.png');
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+padding-bottom: 40px;
+padding-left: 35px;
+padding-right: 36px;
+background-size: cover;
+width: 922px;
+height: 690px;
+}
+.enlaceficha {
+    background-image: url('img/descargabtn.png');
+    background-position: 0 -6px !important;
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 25px;
+    margin-top: 10px !important;
+    position: absolute !important;
+    right: 34px !important;
+    top: 703px;
+    width: 341px;
+}
+			.enlaceficha:hover {
+				background-position:0 -30px!important;
+			}
+			.enlaceficha.ingles{
+				background-position:0 -74px!important;
+				margin-top:14px;
+				right: 8px !important;
+				top: 707px;
+			}
+			.enlaceficha.ingles:hover {
+				background-position:0 -97px!important;
+			}
+
+/* TARJETA */
+
+			.alineador {
+				position:relative;
+				text-align:center;
+			}
+			.alineador img {
+			
+			}
+			.alineador form,.alineador input {
+				
+				border: 0!important;
+				border-shadow: none!important;
+			}
+.alineador form {
+top: 429px;
+position: relative;
+margin-left: 252px;
+margin-top: -29px;
+}
+			.alineador input {
+
+			}
+			.inputA {
+height: 66px;
+font-size: 47px;
+font-family: arial,futura;
+font-weight: bold;
+color: #686868;
+padding: 0 10px;
+text-align: center;
+width: 192px;
+border-radius:6px;
+			}
+.boton {
+width: 125px;
+height: 50px;
+font-weight: bold;
+text-transform: uppercase;
+font-family: arial,futura,helvetica;
+font-size: 25px;
+margin-top: 7px;
+background-color: #e46767;
+color: white;
+border-radius: 6px;
+cursor:pointer;
+}
