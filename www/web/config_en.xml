@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<app>
+	<escenas>
+	
+		<!-- MARTA RECEPCIÓN   -->
+
+		<marta_entrada_primeravisita_inicio loc="audio/marta_ing.mp3" opt="audio/marta_ing_opt.mp3">
+			<locucion iniciar="0" parar="17.5" />
+		</marta_entrada_primeravisita_inicio>
+		
+		<marta_entrada_primeravisita_formulario loc="audio/marta_ing.mp3" opt="audio/marta_ing_opt.mp3">
+			<locucion iniciar="17.5" parar="29" />
+		</marta_entrada_primeravisita_formulario> 
+		
+		<marta_entrada_primeravisita_pasoadoctor loc="audio/marta_ing.mp3" opt="audio/marta_ing_opt.mp3">
+			<locucion iniciar="23" parar="37" />
+			<pablo iniciar="3.5" parar="5" />
+			<andrea iniciar="0" parar="1.5" />
+			<adrian iniciar="1.5" parar="3.5" />
+			<locucion iniciar="38" parar="44" />
+		</marta_entrada_primeravisita_pasoadoctor>
+		
+		<marta_entrada_siguientesvisitas_inicio loc="audio/marta_ing.mp3" opt="audio/marta_ing_opt.mp3">
+			<locucion iniciar="44" parar="60" />
+		</marta_entrada_siguientesvisitas_inicio>
+		
+		<marta_entrada_siguientesvisitas_formulario loc="audio/marta_ing.mp3" opt="audio/marta_ing_opt.mp3">
+			<locucion iniciar="23" parar="37" />
+			<pablo iniciar="3.5" parar="5" />
+			<andrea iniciar="0" parar="1.5" />
+			<adrian iniciar="1.5" parar="3.5" />
+			<locucion iniciar="38" parar="44" />
+		</marta_entrada_siguientesvisitas_formulario>
+
+		<!-- DOCTORA ANDREA   -->
+
+		<andrea_entrada_primeravisita loc="audio/andrea_ing.mp3" opt="audio/andrea_ing_opt.mp3">
+			<locucion iniciar="0" parar="30.4" />
+			<nueve iniciar="57.3" parar="58.8" />
+			<doce iniciar="62.2" parar="63.8" />
+			<dieciseis iniciar="69" parar="70.6" />
+			<tos iniciar="16" parar="17.5" />
+			<fiebre iniciar="11.5" parar="14" />
+			<caida iniciar="17.5" parar="20.4" />
+			<tripa iniciar="14" parar="15.7" />
+			<locucion iniciar="30.4" parar="31.7" />
+		</andrea_entrada_primeravisita>
+
+		<andrea_entrada_siguientesvisitas loc="audio/andrea_ing.mp3" opt="audio/andrea_ing_opt.mp3">
+			<mama iniciar="0" parar="11.5" />
+			<papa iniciar="0" parar="11.5" />
+			<tos iniciar="16" parar="17.5" />
+			<fiebre iniciar="11.5" parar="14" />
+			<caida iniciar="17.5" parar="20.4" />
+			<tripa iniciar="14" parar="15.7" />
+		</andrea_entrada_siguientesvisitas>
+		
+		<andrea_otitis loc="audio/andrea_ing.mp3" opt="audio/andrea_ing_opt.mp3">
+			<papa iniciar="74.5" parar="78.5" />
+			<mama iniciar="78.5" parar="82.5" />
+			<papa iniciar="83" parar="88.5" />
+			<mama iniciar="88.5" parar="94.4" />
+			<!-- PAUSA / CONFIRMAR SI TIENE FIEBRE EL BEBÉ-->
+			<pausa />
+			<locucion iniciar="31.7" parar="37.6" />
+			<!-- MODAL / VEMOS MODAL CON EL OTOSCOPIO PERO AÚN NO EL BOTÓN DE EMPEZAR QR -->
+			<pausa />
+			<!-- ESCRIBE -->
+			<locucion iniciar="37.6" parar="51.4" />
+		</andrea_otitis>
+		
+		<andrea_otitis_ok loc="audio/andrea_ing.mp3" opt="audio/andrea_ing_opt.mp3">
+			<locucion iniciar="51.4" parar="67" />
+		</andrea_otitis_ok>
+		
+		<andrea_tos loc="audio/andrea_ing.mp3" opt="audio/andrea_ing_opt.mp3">
+			<locucion iniciar="67 " parar="89" />
+			<!-- PAUSA / CONFIRMAR QUE LE HEMOS VISTO LA GARGANTA -->
+			<pausa />
+			<locucion iniciar="89 " parar="111.7" />
+		</andrea_tos>
+
+		<andrea_tos_ok loc="audio/andrea_ing.mp3" opt="audio/andrea_ing_opt.mp3">
+			<locucion iniciar="111.7" parar="122.2" />
+			<!-- PAUSA / CONFIRMAR QUE LE COGEMOS DE LA MANO + RISA FX -->
+			<pausa />
+			<locucion iniciar="122.2" parar="140.6" />
+		</andrea_tos_ok>
+		
+		<andrea_se_ha_caido loc="audio/andrea_ing.mp3" opt="audio/andrea_ing_opt.mp3">
+			<locucion iniciar="141" parar="163.5" />
+			<!-- PAUSA / CONFIRMAR QUE LE HEMOS QUITADO LA ROPA -->
+			<pausa />
+			<locucion iniciar="163.5" parar="178.7" />
+			<mama iniciar="129.4" parar="133" />
+			<papa iniciar="133.3" parar="137" />
+			<locucion iniciar="178.7" parar="182" />
+		</andrea_se_ha_caido>
+		
+		<andrea_se_ha_caido_ok loc="audio/andrea_ing.mp3" opt="audio/andrea_ing_opt.mp3">
+			<locucion iniciar="182" parar="214.7" />
+		</andrea_se_ha_caido_ok>
+
+		<andrea_duele_tripa loc="audio/andrea_ing.mp3" opt="audio/andrea_ing_opt.mp3">
+			<locucion iniciar="215" parar="234.5" />
+		</andrea_duele_tripa>
+		
+		<andrea_duele_tripa_ok loc="audio/andrea_ing.mp3" opt="audio/andrea_ing_opt.mp3">
+			<locucion iniciar="235" parar="257.4" />
+			<mama iniciar="154" parar="158.7" />
+			<papa iniciar="149.4" parar="153.7" />
+		</andrea_duele_tripa_ok>
+
+		<!--  DENTISTA ADRIÁN  -->
+
+		<adrian_dentista_primeravisita loc="audio/adrian_ing.mp3" opt="audio/adrian_ing_opt.mp3">
+			<locucion iniciar="0" parar="4.5" />
+			<mama iniciar="0.5" parar="1.4" />
+			<papa iniciar="1.4" parar="2.5" />
+			<locucion iniciar="5.2" parar="16" />
+		</adrian_dentista_primeravisita>
+		
+		<adrian_dentista_siguientesvisitas loc="audio/adrian_ing.mp3" opt="audio/adrian_ing_opt.mp3">
+			<locucion iniciar="16" parar="22.6" />
+		</adrian_dentista_siguientesvisitas>
+		
+		<adrian_dentista_continuacion loc="audio/adrian_ing.mp3" opt="audio/adrian_ing_opt.mp3">
+			<locucion iniciar="22.6" parar="59" />
+		</adrian_dentista_continuacion>
+		<!-- ENTRE ESTAS DOS ETIQUETAS UN MODAL DE CONFIRMACIÓN DE QUE HEMOS HECHO EL MASAJE --> 
+		<adrian_dentista_continuacion_ok loc="audio/adrian_ing.mp3" opt="audio/adrian_ing_opt.mp3">
+			<locucion iniciar="59" parar="92" />
+		</adrian_dentista_continuacion_ok>
+
+<!-- OFTALMÓLOGO PABLO -->
+
+		<pablo_oftalmologo_primeravisita loc="audio/pablo_ing.mp3" opt="audio/pablo_ing_opt.mp3">
+			<locucion iniciar="0" parar="26" />
+			<locucion iniciar="27.8" parar="34" />
+		</pablo_oftalmologo_primeravisita>
+		
+		<pablo_oftalmologo_siguientesvisitas loc="audio/pablo_ing.mp3" opt="audio/pablo_ing_opt.mp3">
+			<!-- <locucion iniciar="34.5" parar="42.3" /> -->
+			<locucion iniciar="0" parar="26" />
+			<locucion iniciar="27.8" parar="34" />
+		</pablo_oftalmologo_siguientesvisitas>
+		
+		<pablo_oftalmologo_continuacion loc="audio/pablo_ing.mp3" opt="audio/pablo_ing_opt.mp3">
+			<locucion iniciar="42.3" parar="43.2" />
+			<papa iniciar="41.2" parar="44.5" />
+			<mama iniciar="37.7" parar="40.7" />
+			<locucion iniciar="43.5" parar="49.5" />
+			<!-- PAUSA / PONER GAFAS -->
+			<pausa />
+			<locucion iniciar="49.5" parar="58" />
+			<!-- MODAL / EMPIEZA A MOSTRAR LOS SÍMBOLOS DEL JUEGO -->
+			<pausa />
+			<locucion iniciar="58" parar="77.2" />
+			<!-- Aquí empieza lo de 'si quieres te lo explico otra vez' que podemos eliminar -->
+			<!-- <papa iniciar="57.6" parar="59" />
+			<mama iniciar="56.3" parar="57.6" />
+			<locucion iniciar="78" parar="80.2" /> -->
+			<!-- Aquí termina lo de 'te lo explico otra vez' que podríamos eliminar -->
+			<locucion iniciar="80.2" parar="85" />
+		</pablo_oftalmologo_continuacion>
+		
+		<pablo_oftalmologo_continuacion_ok loc="audio/pablo_ing.mp3" opt="audio/pablo_ing_opt.mp3">
+			<locucion iniciar="93" parar="113" />
+		</pablo_oftalmologo_continuacion_ok>
+		
+		<pablo_oftalmologo_continuacion_ko loc="audio/pablo_ing.mp3" opt="audio/pablo_ing_opt.mp3">
+			<locucion iniciar="113" parar="130" />
+		</pablo_oftalmologo_continuacion_ko>
+
+		<!-- VACUNAS MARTA  -->
+
+		<marta_vacunas_primera loc="audio/marta_ing.mp3" opt="audio/marta_ing_opt.mp3">
+			<locucion iniciar="73.5" parar="87" />
+			<!-- Llaman por teléfono -->
+			<pausa />
+			<locucion iniciar="87" parar="101.5" />
+			<!-- Termina llamada -->
+			<pausa />
+			<locucion iniciar="101.5" parar="135.5" />
+		</marta_vacunas_primera>
+		
+		<marta_vacunas_primera_ok loc="audio/marta_ing.mp3" opt="audio/marta_ing_opt.mp3">
+			<locucion iniciar="135.5" parar="152.5" />
+		</marta_vacunas_primera_ok>
+
+		<marta_vacunas_segunda loc="audio/marta_ing.mp3" opt="audio/marta_ing_opt.mp3">
+			<locucion iniciar="152.5" parar="190.5" />
+		</marta_vacunas_segunda>
+		
+		<marta_vacunas_segunda_ok loc="audio/marta_ing.mp3" opt="audio/marta_ing_opt.mp3">
+			<locucion iniciar="190.5" parar="221.5" />
+		</marta_vacunas_segunda_ok>
+		
+		<marta_vacunas_tercera loc="audio/marta_ing.mp3" opt="audio/marta_ing_opt.mp3">
+			<locucion iniciar="221.5" parar="234" />
+			<papa iniciar="54" parar="57.5" />
+			<mama iniciar="54" parar="57.5" />
+			<locucion iniciar="234" parar="246" />
+		</marta_vacunas_tercera>
+		
+		<marta_vacunas_tercera_ok loc="audio/marta_ing.mp3" opt="audio/marta_ing_opt.mp3">
+			<locucion iniciar="246" parar="270" />
+		</marta_vacunas_tercera_ok>
+
+	</escenas>
+	<audios>
+
+		<!-- OPCIONES MARTA RECEPCIÓN CASTELLANO  -->
+
+		<marta ruta="audio/marta_ing.mp3" />
+		<marta_opts ruta="audio/marta_ing_opt.mp3" />
+
+		<!-- OPCIONES ANDREA CASTELLANO  -->
+
+		<andrea ruta="audio/andrea_ing.mp3" />
+		<andrea_opts ruta="audio/andrea_ing_opt.mp3" />
+
+		<!-- OPCIONES ADRIÁN/DENTISTA CASTELLANO  -->
+
+		<dentista ruta="audio/adrian_ing.mp3" />
+		<dentista_opts ruta="audio/adrian_ing_opt.mp3" />
+
+		<!-- OPCIONES PABLO/OFTALMÓLOGO CASTELLANO  -->
+
+		<oculista ruta="audio/pablo_ing.mp3" />
+		<oculista_opts ruta="audio/pablo_ing_opt.mp3" />
+
+		<!-- OPCIONES MARTA VACUNAS CASTELLANO  -->
+
+		<vacunas ruta="audio/marta_ing.mp3" />
+		<vacunas_opts ruta="audio/marta_ing_opt.mp3" />
+	</audios>
+	<efectos>
+		<puerta ruta="audio/puerta.mp3" />
+		<telefono ruta="audio/telefono.mp3" />
+		<exterior ruta="audio/exterior.mp3" />
+		<boton ruta="audio/boton.mp3" />
+	</efectos>
+	<fondos>
+		<completo ruta="audio/tema_principal.mp3" />
+		<ligero ruta="audio/tema_minimal.mp3" />
+		<juego ruta="audio/tema_juegos.mp3" />
+	</fondos>
+</app>
