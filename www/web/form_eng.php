@@ -9,60 +9,32 @@
 		if(isset($_POST))
 		{
 ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
-	<head>
-		<title>Hello, Doctor</title>
-		<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<style>
-			.alineador {
-				position:relative;
-				text-align:center;
-			}
-			.alineador img {
-			
-			}
-			.alineador form,.alineador input {
-				
-				border: 0!important;
-				border-shadow: none!important;
-			}
-.alineador form {
-top: 429px;
-position: relative;
-margin-left: 252px;
-margin-top: -29px;
-}
-			.alineador input {
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <!-- App info -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Hello, Doctor!</title>
+    <meta name="description" content="Hello, Doctor | Baby Love | ToyShock | Official Game">
+    <link rel="canonical" href=" http://www.toyshock.com/" />
+    <meta name="keywords" content="Hello Doctor, Games, Tablet, Augmented reality" />
+    <meta name="author" content="bueninvento.es" />
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+    <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
 
-			}
-			.inputA {
-height: 66px;
-font-size: 47px;
-font-family: arial,futura;
-font-weight: bold;
-color: #686868;
-padding: 0 10px;
-text-align: center;
-width: 192px;
-border-radius:6px;
-			}
-.boton {
-width: 125px;
-height: 50px;
-font-weight: bold;
-text-transform: uppercase;
-font-family: arial,futura,helvetica;
-font-size: 25px;
-margin-top: 7px;
-background-color: #e46767;
-color: white;
-border-radius: 6px;
-cursor:pointer;
-}
-		</style>
-	</head>
+    <!-- Iconos -->
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style_eng.css">
+
+  </head>
 	<body>
 		<div class="alineador">
 			<form method="POST" action="index.php">

@@ -1,105 +1,33 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
-	<head>
-		<title>Hello, Doctor!</title>
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
-		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" type="text/css" media="all">
-		<script type="text/javascript" src="swfobject.js"></script>
-		<script type="text/javascript">
-			<!-- Adobe recomienda a los desarrolladores utilizar SWFObject2 para la detección de Flash Player. -->
-			<!-- Para obtener más información, consulte la página del objeto SWFObject en Google Code (http://code.google.com/p/swfobject/). -->
-			<!-- Esta información también está disponible en Adobe Developer Connection en "Detección de versiones de Flash Player e incorporación de archivos SWF con SWFObject 2" Detecting Flash Player versions and embedding SWF files with SWFObject 2" -->
-			<!-- Establézcalo en la versión mínima requerida de Flash Player o en 0 si no quiere activar la detección de la versión -->
-			var swfVersionStr = "11.4.0";
-			<!-- xiSwfUrlStr se puede utilizar para definir un archivo SWF de instalación rápida. -->
-			var xiSwfUrlStr = "";
-			var flashvars = {};
-			var params = {};
-			params.quality = "high";
-			params.bgcolor = "#ffffff";
-			params.play = "true";
-			params.loop = "false";
-			params.wmode = "window";
-			params.scale = "showall";
-			params.menu = "false";
-			params.devicefont = "false";
-			params.salign = "";
-			params.allowscriptaccess = "always";
-			params.allowFullScreen = "true";
-			var attributes = {};
-			attributes.id = "main";
-			attributes.name = "main";
-			attributes.align = "middle";
-			swfobject.createCSS("html", "height:100%; background-color: #ffffff;");
-			swfobject.createCSS("body", "margin:0; padding:0; overflow:hidden;");
-			swfobject.embedSWF(
-				"swf/main.swf", "flashContent",
-				"922", "690",
-				swfVersionStr, xiSwfUrlStr,
-				flashvars, params, attributes);
-		</script>
-		<style type="text/css">
-			html {
-					height: 100%;
-			}
-			body {
-					background-color:#ffffff;
-					margin: 0 0 0 0;
-					padding: 0 0 0 0;
-					background-image:url('img/background.png');
-					background-repeat:repeat;
-					width:100%;
-					height:100%;
-			}
-#wrapper {
-border: 0px solid #CCCCCC;
-position: absolute;
-top: 0;
-bottom: 0;
-left: 0;
-right: 0;
-margin: auto;
-width: 993px!important;
-height: 717px!important;
-background-image: url('img/sombra.png');
-background-position: center;
-background-repeat: no-repeat;
-background-size: cover;
-padding-bottom: 40px;
-padding-left: 35px;
-padding-right: 36px;
-background-size: cover;
-width: 922px;
-height: 690px;
-}
-.enlaceficha {
-    background-image: url("img/descargabtn.png");
-    background-position: 0 -6px !important;
-    background-repeat: no-repeat;
-    display: inline-block;
-    height: 25px;
-    margin-top: 10px !important;
-    position: absolute !important;
-    right: 34px;
-    top: 703px;
-    width: 341px;
-}
-			.enlaceficha:hover {
-				background-position-y:-30px;
-			}
-			.enlaceficha.ingles{
-				background-position-y:-74px;
-				margin-top:14px;
-				right:5px;
-			}
-			.enlaceficha.ingles:hover {
-				background-position-y:-97px;
-			}
-		</style>
-	</head>
-	<body>
+﻿<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <!-- App info -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Hello, Doctor!</title>
+    <meta name="description" content="Hello, Doctor | Baby Love | ToyShock | Official Game">
+    <link rel="canonical" href=" http://www.toyshock.com/" />
+    <meta name="keywords" content="Hello Doctor, Games, Tablet, Augmented reality" />
+    <meta name="author" content="bueninvento.es" />
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+    <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+
+    <!-- Iconos -->
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style_esp.css">
+
+    <!-- Header scripts () -->
+    <script type="text/javascript" src="js/swfobject.js"></script>
+    <script type="text/javascript" src="js/main_esp.js"></script>
+  </head>
+  <body class="game">
 	<div id="wrapper">
 		<div id="flashContent">
 			<a href="http://www.adobe.com/go/getflash">
@@ -110,6 +38,5 @@ height: 690px;
 		<a class="enlaceficha" target="_blank" href="ficha.pdf">
 		</a>
 	</div>
-
 	</body>
 </html>
