@@ -404,6 +404,7 @@
 				}
 				if (xml.children()[i].name() == "pausa")
 				{
+					trace("pausaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
 					charlas.push([xml.children()[i].name(), 0, 0]);
 				}
 				if (xml.children()[i].name() == typeEdadOption)
@@ -454,6 +455,11 @@
 		
 		private function reproduce():void
 		{
+			if (_sintoma == 99)
+			{
+				//trace("********************************************", tipoModal);
+				tipoModal = 200;
+			}
 			//var esperaModal:Boolean = false;
 			if (charlas[countCharlas][0] == "locucion")
 			{
@@ -461,6 +467,40 @@
 			}
 			else if (charlas[countCharlas][0] == "pausa")
 			{
+				if (tipoModal == 200)
+				{
+					trace("espera: ", _sintoma);
+					trace("amos pallááááá 0");
+					//tipoModal = true;
+					//removeEventListener(Event.ENTER_FRAME, controllerSound);
+					//boca.gotoAndStop(boca.totalFrames);
+					if (_sintoma == 1)
+					{
+						llamada.gotoAndStop(1);
+					}
+					if (_sintoma == 6)
+					{
+						llamada.gotoAndStop(4);
+					}
+					if (_sintoma == 3 || _sintoma == 7)
+					{
+						llamada.gotoAndStop(3);
+						bocadillo.addEventListener(MouseEvent.CLICK, onMouse);
+					}
+					if (_sintoma == 99)
+					{
+						//llamada.gotoAndStop(1);
+						llamada.gotoAndStop(7);
+						llamada.addEventListener(MouseEvent.CLICK, onModal);
+					}
+					llamada.visible = true;
+					esperaModal = true;
+					//snd = _opt;
+					_controller._pausaTodo = true;
+					countCharlas++;
+					// funcion muestra modal
+					llamada.addEventListener(MouseEvent.CLICK, onModal);
+				}
 				if (tipoModal == 0)
 				{
 					trace("espera: ", _sintoma);
