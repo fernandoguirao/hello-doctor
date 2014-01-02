@@ -231,6 +231,9 @@
 			{
 				mySo.data.caida = false;
 			}
+			mySo.data.caida = false;
+			mySo.data.tripa = false;
+			mySo.data.tos = false;
 			/*
 			mySo.data.diente = false;
 			//mySo.data.dentista = false;

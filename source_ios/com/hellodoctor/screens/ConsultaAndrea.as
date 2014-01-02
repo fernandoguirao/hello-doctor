@@ -476,9 +476,10 @@
 					{
 						llamada.gotoAndStop(4);
 					}
-					if (_sintoma == 7)
+					if (_sintoma == 3 || _sintoma == 7)
 					{
 						llamada.gotoAndStop(3);
+						bocadillo.addEventListener(MouseEvent.CLICK, onMouse);
 					}
 					if (_sintoma == 99)
 					{
@@ -710,6 +711,7 @@
 						else if (_sintoma == 3 || _sintoma == 7)
 						{
 							//_controller.onTweenScreen(Constants.REQUEST_JUEGO_RADIO);
+							bocadillo.removeEventListener(MouseEvent.CLICK, eliminarQR);
 							bocadillo.visible = true;
 							bocadillo.gotoAndStop(1);
 							bocadillo.objs.gotoAndStop(_sintoma);

@@ -745,7 +745,7 @@
 						case 3 :
 							_xmlSection = new XML(_xml.andrea_duele_tripa);
 							_xmlOKSection = new XML(_xml.andrea_duele_tripa_ok);
-							tipoModal = -1;
+							tipoModal = 10;
 							break;
 
 						case 4 :
@@ -788,7 +788,7 @@
 					_sections.addChild( screenConsultaAndrea );
 					//_screenData = {controller:this,sintoma:_sintoma,audios:_audios,objscreen:objEffects,_globalUrl:globalUrl};
 					_screenData = {controller:this,isFirstTime:_nuevo,sintoma:_sintoma,_tipoModal:tipoModal,tutor:_tutor,edad:_edad,loc:_audios.andrea,opt:_audios.andrea_opts,_xml:_xmlSection,_xmlpre:_xmlSectionPre,_xmlok:_xmlOKSection,_mainroot:_main,juego:_juego};
-					trace(_audios.andrea,_audios.andrea_opts,_xmlSection);
+					//trace(_audios.andrea,_audios.andrea_opts,_xmlSection);
 					screenConsultaAndrea.init( _screenData );
 					_screenActive = screenConsultaAndrea;
 					break;
