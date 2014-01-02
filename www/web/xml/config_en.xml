@@ -13,7 +13,7 @@
 		</marta_entrada_primeravisita_formulario> 
 		
 		<marta_entrada_primeravisita_pasoadoctor loc="audio/marta_ing.mp3" opt="audio/marta_ing_opt.mp3">
-			<locucion iniciar="23" parar="37" />
+			<locucion iniciar="29" parar="37" />
 			<pablo iniciar="3.5" parar="5" />
 			<andrea iniciar="0" parar="1.5" />
 			<adrian iniciar="1.5" parar="3.5" />
@@ -25,7 +25,7 @@
 		</marta_entrada_siguientesvisitas_inicio>
 		
 		<marta_entrada_siguientesvisitas_formulario loc="audio/marta_ing.mp3" opt="audio/marta_ing_opt.mp3">
-			<locucion iniciar="23" parar="37" />
+			<locucion iniciar="29" parar="37" />
 			<pablo iniciar="3.5" parar="5" />
 			<andrea iniciar="0" parar="1.5" />
 			<adrian iniciar="1.5" parar="3.5" />

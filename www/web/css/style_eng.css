@@ -5,7 +5,7 @@
 					background-color:#ffffff;
 					margin: 0 0 0 0;
 					padding: 0 0 0 0;
-					background-image:url('img/background.png');
+					background-image:url('../img/background.png');
 					background-repeat:repeat;
 					width:100%;
 					height:100%;
@@ -20,7 +20,7 @@ right: 0;
 margin: auto;
 width: 993px!important;
 height: 717px!important;
-background-image: url('img/sombra.png');
+background-image: url('../img/sombra.png');
 background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
@@ -32,7 +32,7 @@ width: 922px;
 height: 690px;
 }
 .enlaceficha {
-    background-image: url('img/descargabtn.png');
+    background-image: url('../img/descargabtn.png');
     background-position: 0 -6px !important;
     background-repeat: no-repeat;
     display: inline-block;
