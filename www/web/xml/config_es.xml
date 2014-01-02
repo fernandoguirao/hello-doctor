@@ -114,15 +114,16 @@
 		
 		<andrea_se_ha_caido_ok loc="audio/andrea_cast.mp3" opt="audio/andrea_cast_opt.mp3">
 			<!-- ESCRIBE -->
-			<locucion iniciar="227.5" parar="256" />
+			<locucion iniciar="227.5" parar="251" />
+			<!-- NUEVO MODAL -->
+			<pausa />
+			<locucion iniciar="251" parar="256" />
 		</andrea_se_ha_caido_ok>
 
 		<andrea_duele_tripa loc="audio/andrea_cast.mp3" opt="audio/andrea_cast_opt.mp3">
 			<locucion iniciar="256" parar="270" />
 			<papa iniciar="45.4" parar="46.2" />
 			<mama iniciar="44.5" parar="45.3" />
-			<!-- NUEVO MODAL -->
-			<pausa />
 			<locucion iniciar="271" parar="276.9" />
 		</andrea_duele_tripa>
 		
