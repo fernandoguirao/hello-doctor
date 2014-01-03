@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<application xmlns="http://ns.adobe.com/air/application/3.2">
+<application xmlns="http://ns.adobe.com/air/application/3.6">
     <id>main-ios-eng</id>
     <versionNumber>1.0</versionNumber>
     <filename>Hello, Doctor - english</filename>
@@ -45,4 +45,5 @@
         <InfoAdditions><![CDATA[<key>UIDeviceFamily</key><array><string>2</string></array>]]></InfoAdditions>
     </iPhone>
     <supportedLanguages>en es</supportedLanguages>
-<version>1.0</version></application>
+    <version>1.0</version>
+</application>
