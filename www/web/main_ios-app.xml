@@ -45,4 +45,5 @@
         <InfoAdditions><![CDATA[<key>UIDeviceFamily</key><array><string>2</string></array>]]></InfoAdditions>
         <InfoAdditions><![CDATA[<key>UIPrerenderedIcon</key><true/>]]></InfoAdditions>
     </iPhone>
+    
 </application>
