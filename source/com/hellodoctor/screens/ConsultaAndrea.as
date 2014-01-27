@@ -42,6 +42,7 @@
 		private var _controller:Object;
 		private var _main:Object;
 		private var _isFirstTime:Boolean;
+		private var _prevsintoma:int;
 		private var _sintoma:int;
 		
 		private var _qrlectura:String;
@@ -445,6 +446,7 @@
 					_main.mySo.data.caida = true;
 				}
 				_main.saveValue();
+				_prevsintoma = _sintoma;
 				_sintoma = 99;
 				reproduce();
 				boca.play();
@@ -487,11 +489,17 @@
 						llamada.gotoAndStop(3);
 						bocadillo.addEventListener(MouseEvent.CLICK, onMouse);
 					}
-					if (_sintoma == 99)
+					if (_prevsintoma == 7)
 					{
 						//llamada.gotoAndStop(1);
 						llamada.gotoAndStop(7);
-						llamada.addEventListener(MouseEvent.CLICK, onModal);
+						//llamada.addEventListener(MouseEvent.CLICK, onModal);
+					}
+					if (_prevsintoma == 6)
+					{
+						//llamada.gotoAndStop(1);
+						llamada.gotoAndStop(5);
+						//llamada.addEventListener(MouseEvent.CLICK, onModal);
 					}
 					llamada.visible = true;
 					esperaModal = true;

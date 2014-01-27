@@ -42,6 +42,7 @@
 		private var _controller:Object;
 		private var _main:Object;
 		private var _isFirstTime:Boolean;
+		private var _prevsintoma:int;
 		private var _sintoma:int;
 		
 		private var _qrlectura:String;
@@ -173,7 +174,7 @@
 			ayudaQR.visible = false;
 			_conseguido = true;
 			
-			trace("conseguido QR chungo");
+			trace("eliminado QR");
 			if (tipoModal == 101)
 			{
 				bocadillo.visible = false;
@@ -196,7 +197,7 @@
 			
 			getQRimage.removeEventListener(QRreaderEvent.QR_IMAGE_READ_COMPLETE, onQrImageReadComplete);
 			qrDecode.removeEventListener(QRdecoderEvent.QR_DECODE_COMPLETE, onQrDecodeComplete);
-			removeEventListener(MouseEvent.CLICK, eliminarQR);
+			//removeEventListener(MouseEvent.CLICK, eliminarQR);
 			bocadillo.removeEventListener(MouseEvent.CLICK, eliminarQR);
 		}
 
@@ -260,7 +261,7 @@
 				montaCharlas(_xml,_xmlpre);
 			}
 			
-			_controller._loadingClip.mc.txt.text = "IN THE PEDIATRICIAN";
+			_controller._loadingClip.mc.txt.text = "EN EL PEDIATRA";
 			_controller._loadingClip.alpha = 0;
 			
 			if (_controller._primeraAndrea)
@@ -306,7 +307,7 @@
 			}
 			bocadillo.visible = false;
 			bocadillo.gotoAndStop(1);
-			trace("2");
+			//trace("2");
 			typeSexOption = _tutor.toLowerCase();
 			switch (_sintoma)
 			{
@@ -404,6 +405,7 @@
 				}
 				if (xml.children()[i].name() == "pausa")
 				{
+					trace("pausaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
 					charlas.push([xml.children()[i].name(), 0, 0]);
 				}
 				if (xml.children()[i].name() == typeEdadOption)
@@ -444,6 +446,7 @@
 					_main.mySo.data.caida = true;
 				}
 				_main.saveValue();
+				_prevsintoma = _sintoma;
 				_sintoma = 99;
 				reproduce();
 				boca.play();
@@ -454,6 +457,11 @@
 		
 		private function reproduce():void
 		{
+			if (_sintoma == 99)
+			{
+				//trace("********************************************", tipoModal);
+				tipoModal = 200;
+			}
 			//var esperaModal:Boolean = false;
 			if (charlas[countCharlas][0] == "locucion")
 			{
@@ -461,10 +469,50 @@
 			}
 			else if (charlas[countCharlas][0] == "pausa")
 			{
+				if (tipoModal == 200)
+				{
+					trace("espera: ", _sintoma);
+					trace("amos pallááááá 0");
+					//tipoModal = true;
+					//removeEventListener(Event.ENTER_FRAME, controllerSound);
+					//boca.gotoAndStop(boca.totalFrames);
+					if (_sintoma == 1)
+					{
+						llamada.gotoAndStop(1);
+					}
+					if (_sintoma == 6)
+					{
+						llamada.gotoAndStop(4);
+					}
+					if (_sintoma == 3 || _sintoma == 7)
+					{
+						llamada.gotoAndStop(3);
+						bocadillo.addEventListener(MouseEvent.CLICK, onMouse);
+					}
+					if (_prevsintoma == 7)
+					{
+						//llamada.gotoAndStop(1);
+						llamada.gotoAndStop(7);
+						//llamada.addEventListener(MouseEvent.CLICK, onModal);
+					}
+					if (_prevsintoma == 6)
+					{
+						//llamada.gotoAndStop(1);
+						llamada.gotoAndStop(5);
+						//llamada.addEventListener(MouseEvent.CLICK, onModal);
+					}
+					llamada.visible = true;
+					esperaModal = true;
+					//snd = _opt;
+					_controller._pausaTodo = true;
+					countCharlas++;
+					// funcion muestra modal
+					llamada.addEventListener(MouseEvent.CLICK, onModal);
+				}
 				if (tipoModal == 0)
 				{
 					trace("espera: ", _sintoma);
-					
+					trace("amos pallááááá 0");
 					//tipoModal = true;
 					//removeEventListener(Event.ENTER_FRAME, controllerSound);
 					//boca.gotoAndStop(boca.totalFrames);
@@ -496,6 +544,7 @@
 				if (tipoModal == 1)
 				{
 					trace("espera");
+					trace("amos pallááááá 1");
 					//tipoModal++;
 					//tipoModal = true;
 					//removeEventListener(Event.ENTER_FRAME, controllerSound);
@@ -513,7 +562,7 @@
 				if (tipoModal == 10)
 				{
 					trace("espera");
-					
+					trace("amos pallááááá 10");
 					//tipoModal = true;
 					//removeEventListener(Event.ENTER_FRAME, controllerSound);
 					//boca.gotoAndStop(boca.totalFrames);
@@ -523,11 +572,15 @@
 					}
 					if (_sintoma == 6)
 					{
-						llamada.gotoAndStop(4);
+						llamada.gotoAndStop(6);
 					}
 					if (_sintoma == 7)
 					{
 						llamada.gotoAndStop(3);
+					}
+					if (_sintoma == 3)
+					{
+						llamada.gotoAndStop(5);
 					}
 					if (_sintoma == 99)
 					{
@@ -544,7 +597,7 @@
 				if (tipoModal == 11)
 				{
 					trace("espera");
-					
+					trace("amos pallááááá 11");
 					//tipoModal = true;
 					//removeEventListener(Event.ENTER_FRAME, controllerSound);
 					//boca.gotoAndStop(boca.totalFrames);
@@ -575,6 +628,7 @@
 				if (tipoModal == 100)
 				{
 					trace("100");
+					trace("amos pallááááá 100");
 					/*
 					//tipoModal = true;
 					//removeEventListener(Event.ENTER_FRAME, controllerSound);
@@ -710,6 +764,7 @@
 						}
 						else if (_sintoma == 3 || _sintoma == 7)
 						{
+							trace("amos pallááááá´fin");
 							//_controller.onTweenScreen(Constants.REQUEST_JUEGO_RADIO);
 							bocadillo.removeEventListener(MouseEvent.CLICK, eliminarQR);
 							bocadillo.visible = true;

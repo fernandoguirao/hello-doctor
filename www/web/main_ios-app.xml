@@ -28,7 +28,7 @@
         <fullScreen>true</fullScreen>
         <autoOrients>false</autoOrients>
         <aspectRatio>landscape</aspectRatio>
-        <renderMode>auto</renderMode>
+        <renderMode>direct</renderMode>
     </initialWindow>
     <customUpdateUI>false</customUpdateUI>
     <allowBrowserInvocation>false</allowBrowserInvocation>
@@ -41,9 +41,8 @@
         <image72x72>img/icono72x72.png</image72x72>
     </icon>
     <iPhone>
-        <requestedDisplayResolution>standard</requestedDisplayResolution>
+        <requestedDisplayResolution>high</requestedDisplayResolution>
         <InfoAdditions><![CDATA[<key>UIDeviceFamily</key><array><string>2</string></array>]]></InfoAdditions>
         <InfoAdditions><![CDATA[<key>UIPrerenderedIcon</key><true/>]]></InfoAdditions>
     </iPhone>
-    
 </application>
