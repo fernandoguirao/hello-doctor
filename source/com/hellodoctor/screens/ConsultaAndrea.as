@@ -476,19 +476,7 @@
 					//tipoModal = true;
 					//removeEventListener(Event.ENTER_FRAME, controllerSound);
 					//boca.gotoAndStop(boca.totalFrames);
-					if (_sintoma == 1)
-					{
-						llamada.gotoAndStop(1);
-					}
-					if (_sintoma == 6)
-					{
-						llamada.gotoAndStop(4);
-					}
-					if (_sintoma == 3 || _sintoma == 7)
-					{
-						llamada.gotoAndStop(3);
-						bocadillo.addEventListener(MouseEvent.CLICK, onMouse);
-					}
+					
 					if (_prevsintoma == 7)
 					{
 						//llamada.gotoAndStop(1);

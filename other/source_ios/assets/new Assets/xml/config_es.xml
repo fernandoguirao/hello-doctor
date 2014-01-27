@@ -145,11 +145,13 @@
 			<mama iniciar="34.5" parar="37.6" />
 			<locucion iniciar="34.7" parar="41" />
 			<!-- PAUSA / PONER GAFAS -->
+			<pausa />
 			<locucion iniciar="41" parar="46" />
 			<mama iniciar="48" parar="51.4" />
 			<papa iniciar="51.5" parar="55" />
 			<locucion iniciar="46" parar="48.9" />
 			<!-- MODAL / EMPIEZA A MOSTRAR LOS SÍMBOLOS DEL JUEGO -->
+			<pausa />
 			<locucion iniciar="48.9" parar="64" />
 			<!-- Aquí empieza lo de 'si quieres te lo explico otra vez' que podemos eliminar -->
 			<papa iniciar="57" parar="58.5" />
