@@ -114,10 +114,10 @@
 
 		<andrea_se_ha_caido_ok loc="audio/andrea_cast.mp3" opt="audio/andrea_cast_opt.mp3">
 			<!-- ESCRIBE -->
-			<locucion iniciar="227.5" parar="251" />
+			<locucion iniciar="227.5" parar="251.5" />
 			<!-- NUEVO MODAL -->
 			<pausa />
-			<locucion iniciar="251" parar="256" />
+			<locucion iniciar="251.5" parar="256" />
 		</andrea_se_ha_caido_ok>
 
 		<andrea_duele_tripa loc="audio/andrea_cast.mp3" opt="audio/andrea_cast_opt.mp3">

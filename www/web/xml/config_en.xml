@@ -101,9 +101,9 @@
 		</andrea_se_ha_caido>
 		
 		<andrea_se_ha_caido_ok loc="audio/andrea_ing.mp3" opt="audio/andrea_ing_opt.mp3">
-			<locucion iniciar="182" parar="208" />
+			<locucion iniciar="182" parar="209.7" />
 			<pausa />
-			<locucion iniciar="208" parar="214.7" />
+			<locucion iniciar="209.7" parar="214.7" />
 		</andrea_se_ha_caido_ok>
 
 		<andrea_duele_tripa loc="audio/andrea_ing.mp3" opt="audio/andrea_ing_opt.mp3">

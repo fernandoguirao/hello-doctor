@@ -1,7 +1,7 @@
 			html {
 					height: 100%;
 			}
-			body {
+			body.game {
 					background-color:#ffffff;
 					margin: 0 0 0 0;
 					padding: 0 0 0 0;
@@ -32,8 +32,8 @@ width: 922px;
 height: 690px;
 }
 .enlaceficha {
-    background-image: url('../img/descargabtn.png');
-    background-position: 0 -6px !important;
+    background-image: url("../img/descargabtn.png");
+    background-position: 0 -6px;
     background-repeat: no-repeat;
     display: inline-block;
     height: 25px;
@@ -44,17 +44,17 @@ height: 690px;
     width: 341px;
 }
 			.enlaceficha:hover {
-				background-position:0 -30px!important;
+				background-position-y:-30px;
 			}
 			.enlaceficha.ingles{
-				background-position:0 -74px!important;
+				background-position:0 -74px !important;
 				margin-top:14px;
-				right: 8px !important;
-				top: 707px;
+				right:5px;
 			}
 			.enlaceficha.ingles:hover {
-				background-position:0 -97px!important;
+				background-position:0 -97px !important;
 			}
+			
 
 /* TARJETA */
 

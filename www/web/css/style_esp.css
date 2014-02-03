@@ -39,7 +39,7 @@ height: 690px;
     height: 25px;
     margin-top: 10px !important;
     position: absolute !important;
-    right: 34px;
+    right: 34px !important;
     top: 703px;
     width: 341px;
 }
