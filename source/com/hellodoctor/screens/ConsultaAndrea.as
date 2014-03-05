@@ -283,7 +283,9 @@
 			_qrlectura = _controller._sintomas[_controller._sintoma];
 			
 			_main.mySo.data.andrea = false;
+			_controller._nuevoAndrea = false;
 			//TweenMax.to(this, 1, {alpha: 1});
+			_main.saveValue();
 		}
 		
 		private function montaCharlas(xml:XML,xmlpre:XML):void
@@ -480,13 +482,13 @@
 					if (_prevsintoma == 7)
 					{
 						//llamada.gotoAndStop(1);
-						llamada.gotoAndStop(7);
+						llamada.gotoAndStop(5);
 						//llamada.addEventListener(MouseEvent.CLICK, onModal);
 					}
 					if (_prevsintoma == 6)
 					{
 						//llamada.gotoAndStop(1);
-						llamada.gotoAndStop(5);
+						llamada.gotoAndStop(2);
 						//llamada.addEventListener(MouseEvent.CLICK, onModal);
 					}
 					llamada.visible = true;

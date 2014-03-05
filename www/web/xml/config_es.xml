@@ -162,7 +162,9 @@
 		
 		<pablo_oftalmologo_siguientesvisitas loc="audio/pablo_cast.mp3" opt="audio/pablo_cast_opt.mp3">
 			<!-- <locucion iniciar="28" parar="34" /> -->
-			<locucion iniciar="0" parar="28" />
+			<locucion iniciar="0" parar="3.8" />
+			<locucion iniciar="28" parar="30.8" />
+			<locucion iniciar="23" parar="28" />
 		</pablo_oftalmologo_siguientesvisitas>
 		
 		<pablo_oftalmologo_continuacion loc="audio/pablo_cast.mp3" opt="audio/pablo_cast_opt.mp3">

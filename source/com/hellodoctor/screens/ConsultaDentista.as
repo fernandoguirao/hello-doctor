@@ -237,6 +237,8 @@
 			_qrlectura = _controller._sintomas[_controller._sintoma];
 			
 			_main.mySo.data.dentista = false;
+			_controller._nuevoDentista = false;
+			_main.saveValue();
 			//TweenMax.to(this, 1, {alpha: 1});
 		}
 		

@@ -102,6 +102,11 @@
 					
 				case "click" :
 					_controller._sintoma = _btn.sintoma;
+				if (_controller._sintoma == 4)
+					{
+						_controller._juego = false;
+						_controller._juegoOculista = true;
+					}
 					_controller.onTweenScreen(Constants.REQUEST_RECEPCION);
 					break;
 					

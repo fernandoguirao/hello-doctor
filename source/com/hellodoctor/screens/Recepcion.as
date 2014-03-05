@@ -301,6 +301,8 @@
 			_qrlectura = _controller._sintomas[_controller._sintoma];
 			
 			_main.mySo.data.marta = false;
+			_controller._nuevoMarta = false;
+			_main.saveValue();
 			//TweenMax.to(this, 1, {alpha: 1});
 		}
 		

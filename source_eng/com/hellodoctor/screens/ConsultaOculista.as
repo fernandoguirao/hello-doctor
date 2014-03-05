@@ -193,6 +193,7 @@
 			*/
 			_controller = screenData.controller;
 			_main = screenData._mainroot;
+			_main.mySo.data.oculista = false;
 			_isFirstTime = screenData.isFirstTime;
 			_sintoma = screenData.sintoma;
 			//_sintoma = 1;
@@ -263,6 +264,8 @@
 			_qrlectura = _controller._sintomas[_controller._sintoma];
 			
 			_main.mySo.data.oculista = false;
+			_controller._nuevoOculista = false;
+			_main.saveValue();
 			//TweenMax.to(this, 1, {alpha: 1});
 		}
 		

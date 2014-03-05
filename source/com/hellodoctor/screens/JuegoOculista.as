@@ -189,7 +189,7 @@
 					countErrors++;
 				}
 			}
-			if (countErrors > 2)
+			if (countErrors > 0)
 			{
 				resuelto = false;
 			}
